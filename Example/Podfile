@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'StackViewSeparator_Example' do
+  pod 'StackViewSeparator', :path => '../'
+
+  target 'StackViewSeparator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
