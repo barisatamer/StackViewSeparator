@@ -22,7 +22,7 @@ pod 'StackViewSeparator'
 
 ## Author
 
-Baris Atamer, baris@igenius.net
+Baris Atamer, brsatamer@gmail.com
 
 ## License
 

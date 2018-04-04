@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		288BF26ADE789696D9816691EF2D5DB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3B53281B03429D422D8429E89A2FA998 /* StackViewSeparator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 436408F19BFE5EC20B3A6CCC87CEDF07 /* StackViewSeparator-dummy.m */; };
+		3EF364AE1FA08C427100E37ED7C36D95 /* UIStackView+Swizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F73A425868457AB71BE368CB4D572C /* UIStackView+Swizzler.swift */; };
 		4F8709B98A828127D58EC10B29B6B94A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		5AD0002A6568E04669280DAA39ABD134 /* StackViewSeparator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DACBEE4D6EB9A4260F6E8FA17EB01CE3 /* StackViewSeparator-dummy.m */; };
+		55FF294CF22E76A0610A20A765496E17 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E5D6DA0EF4A2E70A366CE80EA58BA4 /* UIStackView+Extension.swift */; };
 		622180DBDD31469829DB86E5518F72D5 /* Pods-StackViewSeparator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDDDEAC0751C7E4EDE11F0AFF2D28EA8 /* Pods-StackViewSeparator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B949004A7B5381C7DCD40E9EF58EF66 /* Pods-StackViewSeparator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3931B12D368EFC9C42F121C8DB631120 /* Pods-StackViewSeparator_Tests-dummy.m */; };
 		AD4CE92854839E244D068B8E99681EF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		BAA39BF615DB302B3484ECD04738E61E /* Pods-StackViewSeparator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05566B7207C99F857803FDA7BB54B276 /* Pods-StackViewSeparator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E324FA0DF5B8BAF8FA88C4D783ED8A25 /* Pods-StackViewSeparator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D72B7EF2A17D504213D7EDEAFA848028 /* Pods-StackViewSeparator_Example-dummy.m */; };
-		E78270FF6920ED08051E4C80376CC242 /* StackViewSeparator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5206AA0424AB8C4E713B84DA7BB13E7 /* StackViewSeparator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9004F105B20A67ECCF48E227BE2ECE6 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C3601E21A8D79B5ED97BA9E7B10083 /* UIStackView+Extension.swift */; };
+		E78270FF6920ED08051E4C80376CC242 /* StackViewSeparator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8FE175B45C7AE60A9B8EE21504635F /* StackViewSeparator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,39 +32,40 @@
 
 /* Begin PBXFileReference section */
 		05566B7207C99F857803FDA7BB54B276 /* Pods-StackViewSeparator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StackViewSeparator_Tests-umbrella.h"; sourceTree = "<group>"; };
-		066D12B1CB957C02B48AC7E4C2A68FFC /* StackViewSeparator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = StackViewSeparator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0E115EA9457A359A3A637B6329AC046B /* Pods-StackViewSeparator_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StackViewSeparator_Tests-resources.sh"; sourceTree = "<group>"; };
-		0E3F2B9FFA15EC451CD61745923318EF /* StackViewSeparator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StackViewSeparator.xcconfig; sourceTree = "<group>"; };
 		28C6B3E0B1B1089C58982F72CBF9DD0B /* Pods-StackViewSeparator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StackViewSeparator_Example.modulemap"; sourceTree = "<group>"; };
-		2B2FF79F3C722B843B721F1F4CFBCD48 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		3931B12D368EFC9C42F121C8DB631120 /* Pods-StackViewSeparator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StackViewSeparator_Tests-dummy.m"; sourceTree = "<group>"; };
 		425BB08CA3B315C10AF4EF14ABF6CE5B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D5D09DF04121AE0DC7985472E6195F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		436408F19BFE5EC20B3A6CCC87CEDF07 /* StackViewSeparator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StackViewSeparator-dummy.m"; sourceTree = "<group>"; };
 		50A073F25B56842FCBFDE53551362F9A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51CD8C43A386914C989ADCB0D063502E /* Pods-StackViewSeparator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StackViewSeparator_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5C32598536181E16D9A56BC3BE0E6B8A /* StackViewSeparator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StackViewSeparator.xcconfig; sourceTree = "<group>"; };
+		5D8FE175B45C7AE60A9B8EE21504635F /* StackViewSeparator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StackViewSeparator-umbrella.h"; sourceTree = "<group>"; };
 		5EAFA32F56D3264C1EC0C46F7A303338 /* Pods-StackViewSeparator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StackViewSeparator_Tests.modulemap"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		663DE49264663F244099E7474C96ED84 /* StackViewSeparator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StackViewSeparator.modulemap; sourceTree = "<group>"; };
 		682868C612FEFB83913D5A72811F4FB1 /* Pods-StackViewSeparator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StackViewSeparator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		689CBB87D94E5EC62F49F4F1DC04C164 /* StackViewSeparator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = StackViewSeparator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		74E5D6DA0EF4A2E70A366CE80EA58BA4 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStackView+Extension.swift"; path = "StackViewSeparator/Classes/UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		751879B4EDF290B00474FB386483E463 /* Pods-StackViewSeparator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StackViewSeparator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7CA9949301827F207B76697C08ABD6EA /* Pods-StackViewSeparator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StackViewSeparator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		7E6DCAEACB35DB3CBC3AA6AFF9AC8A5A /* Pods-StackViewSeparator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StackViewSeparator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		89C3601E21A8D79B5ED97BA9E7B10083 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStackView+Extension.swift"; path = "StackViewSeparator/Classes/UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97797924587B3145969B206FF6BBDACF /* Pods_StackViewSeparator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StackViewSeparator_Tests.framework; path = "Pods-StackViewSeparator_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DD875741FEAC837382F8070CFE88A86 /* StackViewSeparator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StackViewSeparator-prefix.pch"; sourceTree = "<group>"; };
+		A5420B9F3ECA0FFADB26B3528BE4601B /* StackViewSeparator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StackViewSeparator-prefix.pch"; sourceTree = "<group>"; };
+		AF6F928CA94818EF86BC9CBC71CB5117 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0F73A425868457AB71BE368CB4D572C /* UIStackView+Swizzler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStackView+Swizzler.swift"; path = "StackViewSeparator/Classes/UIStackView+Swizzler.swift"; sourceTree = "<group>"; };
 		BDDDEAC0751C7E4EDE11F0AFF2D28EA8 /* Pods-StackViewSeparator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StackViewSeparator_Example-umbrella.h"; sourceTree = "<group>"; };
-		C5206AA0424AB8C4E713B84DA7BB13E7 /* StackViewSeparator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StackViewSeparator-umbrella.h"; sourceTree = "<group>"; };
+		CAEB3F95691B7FEEAE889E9427ADB41C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		CED0F6DDE39931290B10FFDFA61BDEA8 /* Pods-StackViewSeparator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StackViewSeparator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D1DABF14C00BD4A8C0FA3BB05F71C620 /* Pods-StackViewSeparator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StackViewSeparator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D5437A45DE048EB2A27B0C955C18B553 /* Pods-StackViewSeparator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StackViewSeparator_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D59BC997ACC8C5B30B7771AF779664C4 /* StackViewSeparator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StackViewSeparator.modulemap; sourceTree = "<group>"; };
 		D72B7EF2A17D504213D7EDEAFA848028 /* Pods-StackViewSeparator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StackViewSeparator_Example-dummy.m"; sourceTree = "<group>"; };
 		D8827B7E18ACF3DA33B2B3940D2CCA5A /* StackViewSeparator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StackViewSeparator.framework; path = StackViewSeparator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DACBEE4D6EB9A4260F6E8FA17EB01CE3 /* StackViewSeparator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StackViewSeparator-dummy.m"; sourceTree = "<group>"; };
-		E15F28850A1BB5BEC587381207D9279F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		E5D2CB60BFA94BA9D7B5366DDC2A8A2A /* Pods_StackViewSeparator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StackViewSeparator_Example.framework; path = "Pods-StackViewSeparator_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F684C1B80159D7BD0113FE67BE69F2C5 /* Pods-StackViewSeparator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StackViewSeparator_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F6CE8E67B00DD72746F933A26E0BAE46 /* Pods-StackViewSeparator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StackViewSeparator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FD8C141B0C07189711E40A3089E3D558 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		FEC69F903B9B9869EAFDB709A57955EB /* Pods-StackViewSeparator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StackViewSeparator_Example-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200F053B8B650C94D6C477A9213707E5 /* StackViewSeparator */ = {
+			isa = PBXGroup;
+			children = (
+				74E5D6DA0EF4A2E70A366CE80EA58BA4 /* UIStackView+Extension.swift */,
+				B0F73A425868457AB71BE368CB4D572C /* UIStackView+Swizzler.swift */,
+				6ABE7A3AEC317A93A029F6249C40FB75 /* Pod */,
+				CF112D5B4AD90A3040C126A8CA254D31 /* Support Files */,
+			);
+			name = StackViewSeparator;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		20E6056BEE2CF2A7EECFBC5B9062683C /* Pods-StackViewSeparator_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,38 +127,6 @@
 			path = "Target Support Files/Pods-StackViewSeparator_Tests";
 			sourceTree = "<group>";
 		};
-		33F9622DD0073EB4B4606BDE39D7A14C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4D5D09DF04121AE0DC7985472E6195F5 /* Info.plist */,
-				663DE49264663F244099E7474C96ED84 /* StackViewSeparator.modulemap */,
-				0E3F2B9FFA15EC451CD61745923318EF /* StackViewSeparator.xcconfig */,
-				DACBEE4D6EB9A4260F6E8FA17EB01CE3 /* StackViewSeparator-dummy.m */,
-				9DD875741FEAC837382F8070CFE88A86 /* StackViewSeparator-prefix.pch */,
-				C5206AA0424AB8C4E713B84DA7BB13E7 /* StackViewSeparator-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/StackViewSeparator";
-			sourceTree = "<group>";
-		};
-		3C21564511011D818DAA81EAB9B5789B /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FF1B7DD686DFA44E9BA2E4589B96BC3E /* StackViewSeparator */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		4D851F4EA871AFC2EB68346E89EA9B51 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E15F28850A1BB5BEC587381207D9279F /* LICENSE */,
-				2B2FF79F3C722B843B721F1F4CFBCD48 /* README.md */,
-				066D12B1CB957C02B48AC7E4C2A68FFC /* StackViewSeparator.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		5BEB829A775C468A2F4555F2F414B6CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +135,16 @@
 				D8827B7E18ACF3DA33B2B3940D2CCA5A /* StackViewSeparator.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6ABE7A3AEC317A93A029F6249C40FB75 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CAEB3F95691B7FEEAE889E9427ADB41C /* LICENSE */,
+				FD8C141B0C07189711E40A3089E3D558 /* README.md */,
+				689CBB87D94E5EC62F49F4F1DC04C164 /* StackViewSeparator.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		7960D06F6FF5677AA3E01DB94F4D7BDD /* Pods-StackViewSeparator_Example */ = {
@@ -173,11 +165,19 @@
 			path = "Target Support Files/Pods-StackViewSeparator_Example";
 			sourceTree = "<group>";
 		};
+		7AF55B0764C23E1FB806A81B81EC54EB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				200F053B8B650C94D6C477A9213707E5 /* StackViewSeparator */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				3C21564511011D818DAA81EAB9B5789B /* Development Pods */,
+				7AF55B0764C23E1FB806A81B81EC54EB /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				5BEB829A775C468A2F4555F2F414B6CB /* Products */,
 				DCE5D7EFE3BB6FF746E7F8C99D0A8FCB /* Targets Support Files */,
@@ -190,6 +190,20 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF112D5B4AD90A3040C126A8CA254D31 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF6F928CA94818EF86BC9CBC71CB5117 /* Info.plist */,
+				D59BC997ACC8C5B30B7771AF779664C4 /* StackViewSeparator.modulemap */,
+				5C32598536181E16D9A56BC3BE0E6B8A /* StackViewSeparator.xcconfig */,
+				436408F19BFE5EC20B3A6CCC87CEDF07 /* StackViewSeparator-dummy.m */,
+				A5420B9F3ECA0FFADB26B3528BE4601B /* StackViewSeparator-prefix.pch */,
+				5D8FE175B45C7AE60A9B8EE21504635F /* StackViewSeparator-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/StackViewSeparator";
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -207,17 +221,6 @@
 				20E6056BEE2CF2A7EECFBC5B9062683C /* Pods-StackViewSeparator_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		FF1B7DD686DFA44E9BA2E4589B96BC3E /* StackViewSeparator */ = {
-			isa = PBXGroup;
-			children = (
-				89C3601E21A8D79B5ED97BA9E7B10083 /* UIStackView+Extension.swift */,
-				4D851F4EA871AFC2EB68346E89EA9B51 /* Pod */,
-				33F9622DD0073EB4B4606BDE39D7A14C /* Support Files */,
-			);
-			name = StackViewSeparator;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F80C2030EA9C49AFB45BCC378597305 /* Build configuration list for PBXNativeTarget "StackViewSeparator" */;
 			buildPhases = (
-				9C3D7AF71346B0E253296F72A689F349 /* Sources */,
+				1B0D46EAAA06455D95CA4CA4C0812CCD /* Sources */,
 				9697784FE0DABC2B87EEE720557986FD /* Frameworks */,
 				889DF98FD47535E7AA061F7DB43602AB /* Headers */,
 			);
@@ -339,12 +342,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C3D7AF71346B0E253296F72A689F349 /* Sources */ = {
+		1B0D46EAAA06455D95CA4CA4C0812CCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AD0002A6568E04669280DAA39ABD134 /* StackViewSeparator-dummy.m in Sources */,
-				F9004F105B20A67ECCF48E227BE2ECE6 /* UIStackView+Extension.swift in Sources */,
+				3B53281B03429D422D8429E89A2FA998 /* StackViewSeparator-dummy.m in Sources */,
+				55FF294CF22E76A0610A20A765496E17 /* UIStackView+Extension.swift in Sources */,
+				3EF364AE1FA08C427100E37ED7C36D95 /* UIStackView+Swizzler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +374,7 @@
 /* Begin XCBuildConfiguration section */
 		1ECA91C81DCD79F351CD8CA7CDE82C85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E3F2B9FFA15EC451CD61745923318EF /* StackViewSeparator.xcconfig */;
+			baseConfigurationReference = 5C32598536181E16D9A56BC3BE0E6B8A /* StackViewSeparator.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -656,7 +660,7 @@
 		};
 		AE2437230935FB8F1061FE1C3E1E42C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E3F2B9FFA15EC451CD61745923318EF /* StackViewSeparator.xcconfig */;
+			baseConfigurationReference = 5C32598536181E16D9A56BC3BE0E6B8A /* StackViewSeparator.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
