@@ -11,18 +11,53 @@ import StackViewSeparator
 
 class ViewController: UIViewController {
 
+    // MARK: - IB Outlet
+    
     @IBOutlet weak var horizontalStackView: UIStackView!
     @IBOutlet weak var verticalStackView: UIStackView!
+
+    @IBOutlet weak var labelLengthRatio: UILabel!
+    @IBOutlet weak var labelThickness: UILabel!
+    
+    
+    // MARK: - Private Properties
+    
+    private var separatorLengthRatio: CGFloat = 1 {
+        didSet {
+            horizontalStackView.separatorPercent = separatorLengthRatio * 0.01
+            verticalStackView.separatorPercent = separatorLengthRatio * 0.01
+            labelLengthRatio.text = "Length Ratio: \(separatorLengthRatio * 0.01)"
+        }
+    }
+
+    private var separatorThickness: CGFloat = 1.0 {
+        didSet {
+            horizontalStackView.separatorThickness = separatorThickness
+            verticalStackView.separatorThickness = separatorThickness
+            labelThickness.text = "Thickness: \(Int(separatorThickness))"
+        }
+    }
+    
+    
+    // MARK: - View Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
         horizontalStackView.addSeparators()
         verticalStackView.addSeparators()
     }
+    
+    
+    // MARK: - Actions
+    
+    @IBAction func lengthRatioValueChanged(_ stepper: UIStepper) {
+        separatorLengthRatio = CGFloat(stepper.value)
+    }
+    
+    @IBAction func thicknessValueChanged(_ stepper: UIStepper) {
+        separatorThickness = CGFloat(stepper.value)
+    }
+    
 }
 

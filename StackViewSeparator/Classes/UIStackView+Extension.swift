@@ -8,29 +8,36 @@ extension UIStackView {
         static var thickness = "separator_thickness"
         static var color = "separator_color"
         static var percent = "separator_percent"
+        static var separatorViews = "separator_views"
     }
     
     fileprivate var separatorViews: [UIView] {
-        get { return objc_getAssociatedObject(self, &AssociatedKeys.percent) as? [UIView] ?? [UIView]() }
-        set { objc_setAssociatedObject(self, &AssociatedKeys.percent, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
+        get { return objc_getAssociatedObject(self, &AssociatedKeys.separatorViews) as? [UIView] ?? [UIView]() }
+        set { objc_setAssociatedObject(self, &AssociatedKeys.separatorViews, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
     
     /// Thickness of the separator lines
-    @IBInspectable var separatorThickness: CGFloat {
+    @IBInspectable open var separatorThickness: CGFloat {
         get { return objc_getAssociatedObject(self, &AssociatedKeys.thickness) as? CGFloat ?? 0 }
-        set { objc_setAssociatedObject(self, &AssociatedKeys.thickness, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.thickness, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            layoutSubviews()
+        }
+    }
+    
+    /// Percent for the separator length
+    @IBInspectable open var separatorPercent: CGFloat {
+        get { return objc_getAssociatedObject(self, &AssociatedKeys.percent) as? CGFloat ?? 1.0 }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.percent, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            layoutSubviews()
+        }
     }
     
     /// Color of the separator lines
     @IBInspectable var separatorColor: UIColor {
         get { return objc_getAssociatedObject(self, &AssociatedKeys.color) as? UIColor ?? .black }
         set { objc_setAssociatedObject(self, &AssociatedKeys.color, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
-    }
-    
-    /// Percent for the separator length
-    @IBInspectable var separatorPercent: CGFloat {
-        get { return objc_getAssociatedObject(self, &AssociatedKeys.percent) as? CGFloat ?? 1.0 }
-        set { objc_setAssociatedObject(self, &AssociatedKeys.percent, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
     
     open func addSeparators() {
