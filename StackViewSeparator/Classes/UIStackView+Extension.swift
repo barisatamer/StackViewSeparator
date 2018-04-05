@@ -10,6 +10,11 @@ extension UIStackView {
         static var percent = "separator_percent"
     }
     
+    fileprivate var separatorViews: [UIView] {
+        get { return objc_getAssociatedObject(self, &AssociatedKeys.percent) as? [UIView] ?? [UIView]() }
+        set { objc_setAssociatedObject(self, &AssociatedKeys.percent, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
+    }
+    
     /// Thickness of the separator lines
     @IBInspectable var separatorThickness: CGFloat {
         get { return objc_getAssociatedObject(self, &AssociatedKeys.thickness) as? CGFloat ?? 0 }
@@ -29,34 +34,33 @@ extension UIStackView {
     }
     
     open func addSeparators() {
-        
-        for (index, element) in arrangedSubviews.enumerated() {
-            
-            if (index == 0) {
-                continue
-            }
-            
-            let previousView = self.arrangedSubviews[index - 1]
-            
+        for _ in 1..<arrangedSubviews.count {
             let separatorView = UIView()
             separatorView.backgroundColor = separatorColor
-            
-            var center: CGFloat
-            if axis == UILayoutConstraintAxis.horizontal {
-                let length = frame.height * separatorPercent
-                center = (previousView.frame.maxX + element.frame.minX) * 0.5
-                separatorView.frame = CGRect(x: center, y: (self.frame.height - length) * 0.5, width: separatorThickness, height: length)
-            } else {
-                center = (previousView.frame.maxY + element.frame.minY) * 0.5
-                let length = frame.width * separatorPercent
-                separatorView.frame = CGRect(x: (frame.width - length) * 0.5, y: center, width: length, height: separatorThickness)
-            }
-            
+            separatorViews.append(separatorView)
             addSubview(separatorView)
         }
     }
     
     open func relayout() {
-        // TODO: Layout separators
+        for (index, element) in separatorViews.enumerated() {
+            layoutSeparator(view: element, atIndex: index)
+        }
     }
+
+    private func layoutSeparator(view separatorView: UIView, atIndex index: Int) {
+        let previousSubView = arrangedSubviews[index]
+        let currentSubivew = arrangedSubviews[index + 1]
+        
+        if axis == UILayoutConstraintAxis.horizontal {
+            let length = frame.height * separatorPercent
+            let center = (previousSubView.frame.maxX + currentSubivew.frame.minX) * 0.5 - separatorThickness * 0.5
+            separatorView.frame = CGRect(x: center, y: (self.frame.height - length) * 0.5, width: separatorThickness, height: length)
+        } else {
+            let length = frame.width * separatorPercent
+            let center = (previousSubView.frame.maxY + currentSubivew.frame.minY) * 0.5 - separatorThickness * 0.5
+            separatorView.frame = CGRect(x: (frame.width - length) * 0.5, y: center, width: length, height: separatorThickness)
+        }
+    }
+
 }
