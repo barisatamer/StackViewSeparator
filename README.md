@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/StackViewSeparator.svg?style=flat)](http://cocoapods.org/pods/StackViewSeparator)
 [![Platform](https://img.shields.io/cocoapods/p/StackViewSeparator.svg?style=flat)](http://cocoapods.org/pods/StackViewSeparator)
 
+![demo](https://i.imgur.com/AJdQJzb.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
