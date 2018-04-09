@@ -18,6 +18,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var labelLengthRatio: UILabel!
     @IBOutlet weak var labelThickness: UILabel!
+    @IBOutlet weak var labelCornerRadius: UILabel!
     
     
     // MARK: - Private Properties
@@ -35,6 +36,14 @@ class ViewController: UIViewController {
             horizontalStackView.separatorThickness = separatorThickness
             verticalStackView.separatorThickness = separatorThickness
             labelThickness.text = "Thickness: \(Int(separatorThickness))"
+        }
+    }
+    
+    private var separatorCornerRadius: CGFloat = 3.0 {
+        didSet {
+            horizontalStackView.separatorCornerRadius = separatorCornerRadius
+            verticalStackView.separatorCornerRadius = separatorCornerRadius
+            labelCornerRadius.text = "Corner Radius: \(separatorCornerRadius)"
         }
     }
     
@@ -57,6 +66,10 @@ class ViewController: UIViewController {
     
     @IBAction func thicknessValueChanged(_ stepper: UIStepper) {
         separatorThickness = CGFloat(stepper.value)
+    }
+    
+    @IBAction func cornerRadiusValueChanged(_ stepper: UIStepper) {
+        separatorCornerRadius = CGFloat(stepper.value)
     }
     
 }

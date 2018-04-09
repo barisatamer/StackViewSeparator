@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/StackViewSeparator.svg?style=flat)](http://cocoapods.org/pods/StackViewSeparator)
 [![Platform](https://img.shields.io/cocoapods/p/StackViewSeparator.svg?style=flat)](http://cocoapods.org/pods/StackViewSeparator)
 
-![demo](https://i.imgur.com/AJdQJzb.gif)
+![demo](https://i.imgur.com/X8mTuIQ.gif)
 
 ## Example
 

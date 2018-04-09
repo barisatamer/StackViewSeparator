@@ -7,6 +7,7 @@ extension UIStackView {
     private struct AssociatedKeys {
         static var thickness = "separator_thickness"
         static var color = "separator_color"
+        static var cornerRadius = "separator_cornerRadius"
         static var percent = "separator_percent"
         static var separatorViews = "separator_views"
     }
@@ -21,6 +22,15 @@ extension UIStackView {
         get { return objc_getAssociatedObject(self, &AssociatedKeys.thickness) as? CGFloat ?? 0 }
         set {
             objc_setAssociatedObject(self, &AssociatedKeys.thickness, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            layoutSubviews()
+        }
+    }
+    
+    /// Corner Radius of the separator lines
+    @IBInspectable open var separatorCornerRadius: CGFloat {
+        get { return objc_getAssociatedObject(self, &AssociatedKeys.cornerRadius) as? CGFloat ?? 3 }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.cornerRadius, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             layoutSubviews()
         }
     }
@@ -68,6 +78,7 @@ extension UIStackView {
             let center = (previousSubView.frame.maxY + currentSubivew.frame.minY) * 0.5 - separatorThickness * 0.5
             separatorView.frame = CGRect(x: (frame.width - length) * 0.5, y: center, width: length, height: separatorThickness)
         }
+        separatorView.layer.cornerRadius = separatorCornerRadius
     }
 
 }

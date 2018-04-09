@@ -109,7 +109,7 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Du3-Je-D1e" userLabel="Options Stack View">
-                                <rect key="frame" x="24" y="440.5" width="327" height="66"/>
+                                <rect key="frame" x="24" y="440.5" width="327" height="103"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFS-yV-IJ1">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="29"/>
@@ -147,6 +147,24 @@
                                             </stepper>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7JB-7F-L23">
+                                        <rect key="frame" x="0.0" y="74" width="327" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corner Radius: 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNy-Sx-7zP">
+                                                <rect key="frame" x="0.0" y="0.0" width="233" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.77321273089999998" blue="0.21414947509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Ye4-bA-Dye">
+                                                <rect key="frame" x="233" y="0.0" width="94" height="29"/>
+                                                <color key="tintColor" red="1" green="0.77321273089999998" blue="0.21414947509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="cornerRadiusValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Nel-aW-STO"/>
+                                                </connections>
+                                            </stepper>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -168,6 +186,7 @@
                     </view>
                     <connections>
                         <outlet property="horizontalStackView" destination="F2g-Y1-Mbv" id="w9k-i8-cc2"/>
+                        <outlet property="labelCornerRadius" destination="dNy-Sx-7zP" id="Pjj-Og-xjY"/>
                         <outlet property="labelLengthRatio" destination="o2Y-aF-5ED" id="ecr-8F-eRE"/>
                         <outlet property="labelThickness" destination="8im-m2-hA4" id="VKm-bb-DYX"/>
                         <outlet property="verticalStackView" destination="LXX-Gb-ejA" id="Swb-Jw-9kn"/>
