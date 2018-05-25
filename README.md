@@ -1,6 +1,6 @@
 # StackViewSeparator
 
-[![CI Status](http://img.shields.io/travis/Baris Atamer/StackViewSeparator.svg?style=flat)](https://travis-ci.org/Baris Atamer/StackViewSeparator)
+[![CI Status](http://img.shields.io/travis/barisatamer/StackViewSeparator.svg?style=flat)](https://travis-ci.org/barisatamer/StackViewSeparator)
 [![Version](https://img.shields.io/cocoapods/v/StackViewSeparator.svg?style=flat)](http://cocoapods.org/pods/StackViewSeparator)
 [![License](https://img.shields.io/cocoapods/l/StackViewSeparator.svg?style=flat)](http://cocoapods.org/pods/StackViewSeparator)
 [![Platform](https://img.shields.io/cocoapods/p/StackViewSeparator.svg?style=flat)](http://cocoapods.org/pods/StackViewSeparator)
