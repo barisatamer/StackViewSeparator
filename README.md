@@ -22,6 +22,24 @@ it, simply add the following line to your Podfile:
 pod 'StackViewSeparator'
 ```
 
+### Storyboard
+Thickness, Corner Radius, Percent, Color can be set 
+
+![](Images/storyboard_designables.png)
+
+### Code
+```swift
+import StackViewSeparator
+
+let stackView = UIStackView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+...
+...
+stackView.separatorColor = .blue
+stackView.separatorThickness = 3
+stackView.separatorCornerRadius = 1
+stackView.separatorPercent = 0.7 // 0...1 
+```
+
 ## Author
 
 Baris Atamer, brsatamer@gmail.com
