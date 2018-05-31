@@ -45,9 +45,12 @@ extension UIStackView {
     }
     
     /// Color of the separator lines
-    @IBInspectable var separatorColor: UIColor {
+    @IBInspectable open var separatorColor: UIColor {
         get { return objc_getAssociatedObject(self, &AssociatedKeys.color) as? UIColor ?? .black }
-        set { objc_setAssociatedObject(self, &AssociatedKeys.color, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.color, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            layoutSubviews()
+        }
     }
     
     open func addSeparators() {
@@ -79,6 +82,7 @@ extension UIStackView {
             separatorView.frame = CGRect(x: (frame.width - length) * 0.5, y: center, width: length, height: separatorThickness)
         }
         separatorView.layer.cornerRadius = separatorCornerRadius
+        separatorView.backgroundColor = separatorColor
     }
 
 }
