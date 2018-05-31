@@ -5,7 +5,7 @@ target 'StackViewSeparator_Example' do
 
   target 'StackViewSeparator_Tests' do
     inherit! :search_paths
-
-    
+	pod 'StackViewSeparator', :path => '../'
+    pod 'iOSSnapshotTestCase'
   end
 end

@@ -1,16 +1,27 @@
 PODS:
+  - iOSSnapshotTestCase (3.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 3.0.0)
+  - iOSSnapshotTestCase/Core (3.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (3.0.0):
+    - iOSSnapshotTestCase/Core
   - StackViewSeparator (0.1.0)
 
 DEPENDENCIES:
+  - iOSSnapshotTestCase
   - StackViewSeparator (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - iOSSnapshotTestCase
 
 EXTERNAL SOURCES:
   StackViewSeparator:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  StackViewSeparator: 6ab03bb6a9a05f0af18036957e736ee7b815ed6a
+  iOSSnapshotTestCase: 23984ffe05289728d646cbb6a7a10b4fb1c93440
+  StackViewSeparator: f788e760506fe8a4d4198cfca13b241a8d5d1c1f
 
-PODFILE CHECKSUM: 3f1845c2486167418fe2a6960feaa266d3a75239
+PODFILE CHECKSUM: 677c39eebdfa6beafc5feb36e65fae9142784248
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
