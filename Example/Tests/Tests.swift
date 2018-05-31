@@ -1,28 +1,73 @@
 import XCTest
-import StackViewSeparator
 
-class Tests: XCTestCase {
+import StackViewSeparator
+import FBSnapshotTestCase
+
+class Tests: FBSnapshotTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        // Uncomment to enable saving reference images:
+        // recordMode = true
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testHorizontalAxis() {
+        // Create a horizontal stack view with buttons
+        let s = createStackView(axis: .horizontal,
+                                separatorPercent: 0.2,
+                                separatorColor: .green,
+                                separatorThickness: 5,
+                                separatorCornerRadius: 2)
+        
+        // Verify
+        FBSnapshotVerifyView(s)
     }
+
+    func testVerticalAxis() {
+        // Create a vertical stack view with buttons
+        let s = createStackView(axis: .vertical,
+                                separatorPercent: 0.5,
+                                separatorColor: .cyan,
+                                separatorThickness: 10,
+                                separatorCornerRadius: 4)
+        
+        // Verify
+        FBSnapshotVerifyView(s)
+    }
+
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
+    private func createStackView(axis: UILayoutConstraintAxis,
+                                 separatorPercent: CGFloat = 1,
+                                 separatorColor: UIColor = .red,
+                                 separatorThickness: CGFloat = 4,
+                                 separatorCornerRadius: CGFloat = 0) -> UIView
+    {
+        let stackView = UIStackView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        stackView.axis = axis
+        stackView.distribution = .fillEqually
+        stackView.spacing = 15
+        
+        for i in 0...2 {
+            let button = UIButton()
+            button.setTitle("\(i)", for: .normal)
+            button.backgroundColor = .blue
+            stackView.addArrangedSubview(button)
         }
+        
+        stackView.separatorColor = separatorColor
+        stackView.separatorThickness = separatorThickness
+        stackView.separatorCornerRadius = separatorCornerRadius
+        stackView.separatorPercent = separatorPercent
+        
+        stackView.addSeparators()
+        
+        stackView.relayout()
+        
+        return stackView
     }
-    
 }
