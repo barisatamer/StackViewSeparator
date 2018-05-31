@@ -1,6 +1,0 @@
-framework module Pods_StackViewSeparator_Tests {
-  umbrella header "Pods-StackViewSeparator_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

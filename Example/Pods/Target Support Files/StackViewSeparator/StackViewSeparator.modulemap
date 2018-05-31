@@ -1,6 +1,0 @@
-framework module StackViewSeparator {
-  umbrella header "StackViewSeparator-umbrella.h"
-
-  export *
-  module * { export * }
-}
