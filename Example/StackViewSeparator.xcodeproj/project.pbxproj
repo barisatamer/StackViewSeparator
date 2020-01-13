@@ -286,7 +286,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StackViewSeparator_Tests/Pods-StackViewSeparator_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-StackViewSeparator_Tests/Pods-StackViewSeparator_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/StackViewSeparator/StackViewSeparator.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
@@ -297,7 +297,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StackViewSeparator_Tests/Pods-StackViewSeparator_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StackViewSeparator_Tests/Pods-StackViewSeparator_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D143B019DADAA648FE00491C /* [CP] Check Pods Manifest.lock */ = {
@@ -324,7 +324,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StackViewSeparator_Example/Pods-StackViewSeparator_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-StackViewSeparator_Example/Pods-StackViewSeparator_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/StackViewSeparator/StackViewSeparator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -333,7 +333,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StackViewSeparator_Example/Pods-StackViewSeparator_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StackViewSeparator_Example/Pods-StackViewSeparator_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
