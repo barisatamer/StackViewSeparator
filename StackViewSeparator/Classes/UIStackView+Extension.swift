@@ -52,9 +52,17 @@ extension UIStackView {
             layoutSubviews()
         }
     }
-    
+
+    /// Adds separator view for each visible arranged subview. Call this function after updating your stack view items.
     open func addSeparators() {
-        for _ in 1..<arrangedSubviews.count {
+        // Remove all separators.
+        separatorViews.forEach({ $0.removeFromSuperview() })
+        separatorViews = []
+
+        // Add separtors for each visible item.
+        let visibleItems = arrangedSubviews.filter({ $0.isHidden == false })
+        guard visibleItems.count > 1 else { return }
+        for _ in 1..<visibleItems.count {
             let separatorView = UIView()
             separatorView.backgroundColor = separatorColor
             separatorViews.append(separatorView)
