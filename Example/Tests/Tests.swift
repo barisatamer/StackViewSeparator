@@ -45,7 +45,7 @@ class Tests: FBSnapshotTestCase {
                                  separatorPercent: CGFloat = 1,
                                  separatorColor: UIColor = .red,
                                  separatorThickness: CGFloat = 4,
-                                 separatorCornerRadius: CGFloat = 0) -> UIView
+                                 separatorCornerRadius: CGFloat = 0) -> UIStackView
     {
         let stackView = UIStackView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         stackView.axis = axis
