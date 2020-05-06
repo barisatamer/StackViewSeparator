@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'StackViewSeparator'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'An extension to adding separators to UIStackViews'
   s.swift_version    = '4.1'
 
