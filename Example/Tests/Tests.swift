@@ -44,6 +44,22 @@ class Tests: FBSnapshotTestCase {
         FBSnapshotVerifyView(stackView)
     }
 
+    func testHorizontalAxisWithHiddenView() {
+        // Create a horizontal stack view with buttons
+        let stackView: UIStackView = createStackView(
+            axis: .horizontal,
+            separatorPercent: 0.2,
+            separatorColor: .green,
+            separatorThickness: 5,
+            separatorCornerRadius: 2
+        )
+        stackView.arrangedSubviews[1].isHidden = true
+        stackView.addSeparators()
+        stackView.relayout()
+        
+        // Verify
+        FBSnapshotVerifyView(stackView)
+    }
     
     private func createStackView(
         axis: UILayoutConstraintAxis,
