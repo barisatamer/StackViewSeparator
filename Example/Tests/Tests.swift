@@ -18,35 +18,40 @@ class Tests: FBSnapshotTestCase {
     
     func testHorizontalAxis() {
         // Create a horizontal stack view with buttons
-        let s = createStackView(axis: .horizontal,
-                                separatorPercent: 0.2,
-                                separatorColor: .green,
-                                separatorThickness: 5,
-                                separatorCornerRadius: 2)
+        let stackView = createStackView(
+            axis: .horizontal,
+            separatorPercent: 0.2,
+            separatorColor: .green,
+            separatorThickness: 5,
+            separatorCornerRadius: 2
+        )
         
         // Verify
-        FBSnapshotVerifyView(s)
+        FBSnapshotVerifyView(stackView)
     }
 
     func testVerticalAxis() {
         // Create a vertical stack view with buttons
-        let s = createStackView(axis: .vertical,
-                                separatorPercent: 0.5,
-                                separatorColor: .cyan,
-                                separatorThickness: 10,
-                                separatorCornerRadius: 4)
+        let stackView = createStackView(
+            axis: .vertical,
+            separatorPercent: 0.5,
+            separatorColor: .cyan,
+            separatorThickness: 10,
+            separatorCornerRadius: 4
+        )
         
         // Verify
-        FBSnapshotVerifyView(s)
+        FBSnapshotVerifyView(stackView)
     }
 
     
-    private func createStackView(axis: UILayoutConstraintAxis,
-                                 separatorPercent: CGFloat = 1,
-                                 separatorColor: UIColor = .red,
-                                 separatorThickness: CGFloat = 4,
-                                 separatorCornerRadius: CGFloat = 0) -> UIStackView
-    {
+    private func createStackView(
+        axis: UILayoutConstraintAxis,
+        separatorPercent: CGFloat = 1,
+        separatorColor: UIColor = .red,
+        separatorThickness: CGFloat = 4,
+        separatorCornerRadius: CGFloat = 0
+    ) -> UIStackView {
         let stackView = UIStackView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         stackView.axis = axis
         stackView.distribution = .fillEqually
@@ -65,7 +70,6 @@ class Tests: FBSnapshotTestCase {
         stackView.separatorPercent = separatorPercent
         
         stackView.addSeparators()
-        
         stackView.relayout()
         
         return stackView
