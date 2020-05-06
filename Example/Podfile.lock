@@ -4,7 +4,7 @@ PODS:
   - iOSSnapshotTestCase/Core (3.0.0)
   - iOSSnapshotTestCase/SwiftSupport (3.0.0):
     - iOSSnapshotTestCase/Core
-  - StackViewSeparator (0.1.1)
+  - StackViewSeparator (0.1.2)
 
 DEPENDENCIES:
   - iOSSnapshotTestCase
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   iOSSnapshotTestCase: 23984ffe05289728d646cbb6a7a10b4fb1c93440
-  StackViewSeparator: 8a2cc9af363eec513378bf386d8c5d071f056b01
+  StackViewSeparator: 3461bedd38457ae5fa503c7d8904a7b2ad41fd45
 
 PODFILE CHECKSUM: 677c39eebdfa6beafc5feb36e65fae9142784248
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
