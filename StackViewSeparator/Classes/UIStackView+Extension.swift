@@ -77,8 +77,9 @@ extension UIStackView {
     }
 
     private func layoutSeparator(view separatorView: UIView, atIndex index: Int) {
-        let previousSubView = arrangedSubviews[index]
-        let currentSubivew = arrangedSubviews[index + 1]
+        let visibleItems = arrangedSubviews.filter({ $0.isHidden == false })
+        let previousSubView = visibleItems[index]
+        let currentSubivew = visibleItems[index + 1]
         
         if axis == UILayoutConstraintAxis.horizontal {
             let length = frame.height * separatorPercent
